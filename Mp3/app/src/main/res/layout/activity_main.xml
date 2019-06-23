@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity"
+    android:background="@drawable/fondo"
+    >
+
+    <Button
+        android:id="@+id/btnPause"
+        android:layout_width="62dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="264dp"
+        android:background="@drawable/pausa"
+        app:layout_constraintStart_toEndOf="@+id/btnPlay"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="58dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="264dp"
+        android:background="@drawable/detener"
+        app:layout_constraintStart_toEndOf="@+id/btnPause"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="64dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="264dp"
+        android:background="@drawable/reproducir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="67dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/siguiente"
+        app:layout_constraintStart_toEndOf="@+id/Back"
+        app:layout_constraintTop_toBottomOf="@+id/btnStop" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="63dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/anterior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlay" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="241dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="226dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="4dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+</android.support.constraint.ConstraintLayout>
